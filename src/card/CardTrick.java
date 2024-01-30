@@ -33,6 +33,11 @@ public class CardTrick {
             magicHand[i] = c;
         }
         
+        System.out.println("The 7 random cards in the magicHand are:");
+        for (Card card : magicHand) {
+            System.out.println(card.getSuit() + " " + card.getValue());
+        }
+        
         System.out.println("Enter a card value (1-13): ");
         int userValue = scanner.nextInt();
         
